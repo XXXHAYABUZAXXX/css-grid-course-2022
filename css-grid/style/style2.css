@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "nav main aside" "nav footer footer";
+  -ms-grid-columns: min-content 1fr min-content;
+      grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-columns: min-content 1fr min-content;
+  -ms-grid-rows: min-content 1fr min-content;
+      grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+}
+
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aside;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background: steelblue;
+  border: 1px solid skyblue;
+  color: #fff;
+  padding: 20px;
+}
+/*# sourceMappingURL=style2.css.map */
